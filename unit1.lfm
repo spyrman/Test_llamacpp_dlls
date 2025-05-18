@@ -1,0 +1,42 @@
+object FormLlamaTest: TFormLlamaTest
+  Left = 595
+  Height = 405
+  Top = 37
+  Width = 672
+  Caption = 'FormLlamaTest'
+  ClientHeight = 405
+  ClientWidth = 672
+  DesignTimePPI = 144
+  LCLVersion = '4.99.0.0'
+  object BtnLoadModel: TButton
+    Left = 12
+    Height = 43
+    Top = 12
+    Width = 144
+    Caption = 'Load Model'
+    TabOrder = 0
+    OnClick = BtnLoadModelClick
+  end
+  object EditModelPath: TEdit
+    Left = 12
+    Height = 33
+    Top = 60
+    Width = 648
+    TabOrder = 1
+    Text = 'C:\a_model.gguf'
+  end
+  object MemoLog: TMemo
+    Left = 12
+    Height = 276
+    Top = 108
+    Width = 648
+    Lines.Strings = (
+      'Here you see the results'
+    )
+    TabOrder = 2
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 516
+    Top = 24
+  end
+end
